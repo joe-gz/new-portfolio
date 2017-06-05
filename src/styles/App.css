@@ -183,10 +183,15 @@ nav {
 .project-card a {
   text-decoration: none; }
 
-.project-paragraph {
+.main-project-paragraph {
   vertical-align: middle;
   font-family: "Montserrat", sans-serif, sans-serif;
   color: #3A383B; }
+
+.project-paragraph {
+  vertical-align: middle;
+  font-family: "Montserrat", sans-serif, sans-serif;
+  color: #E5E5E5; }
 
 .project-title {
   font-family: "Montserrat", sans-serif, serif;
@@ -203,7 +208,7 @@ nav {
   left: 0;
   margin: 0 auto;
   padding: 5%;
-  color: white;
+  color: #E5E5E5;
   transform: translateY(100%);
   transition: transform .35s ease-out; }
 

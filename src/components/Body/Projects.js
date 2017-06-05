@@ -38,7 +38,7 @@ class Portfolio extends Component {
             </div>
             <div className='project-text-container'>
               <h2 className = 'project-title'>{spotlight.title}</h2>
-              <p className = 'project-paragraph'>{spotlight.description}</p>
+              <p className = 'main-project-paragraph'>{spotlight.description}</p>
               <a className='main-project-button' href={spotlight.link}>
                 Check it out
               </a>
