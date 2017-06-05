@@ -2,6 +2,7 @@
   "name": "new-portfolio",
   "version": "0.1.0",
   "private": true,
+  "homepage" : "https://joe-gz.github.io/new-portfolio",
   "dependencies": {
     "react": "^15.5.4",
     "react-dom": "^15.5.4"
@@ -16,6 +17,7 @@
     "watch-css": "npm run build-css && node-sass-chokidar --include-path ./src --include-path ./node_modules src/ -o src/ --watch --recursive",
     "start-js": "react-scripts start",
     "start": "npm-run-all -p watch-css start-js",
+    "build": "npm run build-css && react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
   }
