@@ -6,7 +6,7 @@ class Header extends Component {
       <nav>
         <div className="headerNav">
           <ul>
-            <li className="headerName"><a href="#topAnchor" title="Home">Joe GZ</a></li>
+            <li className="header-name">Joe <span className='header-last-name'>G</span><span className='header-last-name'>Z</span></li>
             <span className="nav-links">
               <li className="links"><a href="#aboutMeAnchor" title="About">About Me</a></li>
               <li className="links"><a href="#portfolioAnchor" title="portfolio">Portfolio</a></li>

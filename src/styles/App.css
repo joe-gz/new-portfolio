@@ -5,6 +5,9 @@ nav {
   text-align: center;
   z-index: 100; }
 
+.header-last-name {
+  color: #63a313; }
+
 .headerNav {
   position: fixed;
   width: 100%;
@@ -21,7 +24,8 @@ nav {
 .headerNav li {
   display: inline-table; }
 
-.headerName {
+.header-name {
+  color: #E5E5E5;
   padding-left: .2em;
   padding-top: .1em;
   font-size: 2em;
@@ -71,30 +75,38 @@ nav {
   font-size: 4em; }
 
 .about-me {
-  color: #E5E5E5;
-  background-color: rgba(58, 56, 59, 0.95);
-  padding-top: 5%;
+  color: #3A383B;
+  background-color: rgba(229, 229, 229, 0.95);
+  padding-top: 5em;
   padding-bottom: 10%;
   text-align: center; }
 
 .about-me p, .experience p {
-  margin: 0 auto;
+  margin-top: 0;
   font-weight: normal;
   width: 75%;
-  padding-top: 2%;
   text-align: left;
   font-family: "Montserrat", sans-serif, sans-serif;
   font-size: 1.5em; }
 
+.about-me p {
+  text-align: justify;
+  width: 100%; }
+
 .about-me-pic {
-  width: 20em;
+  width: 35%;
   height: auto;
   float: left;
   border-radius: 5%;
-  margin-left: 2%;
-  margin-right: 4%;
+  margin-left: 1em;
+  margin-right: 1em;
   padding: .2em;
   box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.25); }
+
+.about-text-container {
+  display: inline-block;
+  width: 60%;
+  padding: 0 0.5em 0.5em; }
 
 .experience {
   padding-top: 2%;
@@ -128,12 +140,15 @@ nav {
   margin: 0;
   padding: 0; }
 
+.project-header {
+  font-size: 2.5em; }
+
 .portfolio {
   padding-top: 5%;
   padding-bottom: 5%;
   text-align: center;
-  color: #3A383B;
-  background-color: rgba(229, 229, 229, 0.95); }
+  color: #E5E5E5;
+  background-color: rgba(58, 56, 59, 0.95); }
 
 .portfolio-paragraph {
   margin-bottom: .3em;
@@ -186,7 +201,7 @@ nav {
 .main-project-paragraph {
   vertical-align: middle;
   font-family: "Montserrat", sans-serif, sans-serif;
-  color: #3A383B; }
+  color: #E5E5E5; }
 
 .project-paragraph {
   vertical-align: middle;
@@ -258,7 +273,7 @@ nav {
 .contact h1 {
   list-style-type: none;
   font-weight: normal;
-  padding-top: 1em; }
+  padding-top: 0.5em; }
 
 .contact-link-container {
   display: flex;

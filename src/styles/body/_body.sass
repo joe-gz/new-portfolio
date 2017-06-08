@@ -22,29 +22,38 @@
   font-size: 4em
 
 .about-me
-  @include backgroundToFont($darkFontColor)
-  padding-top: 5%
+  @include backgroundToFont($lightFontColor)
+  padding-top: 5em
   padding-bottom: 10%
   text-align: center
 
 .about-me p, .experience p
-  margin: 0 auto
+  margin-top: 0
   font-weight: normal
   width: 75%
-  padding-top: 2%
+  // padding-top: 2%
   text-align: left
   font-family: $textFont, sans-serif
   font-size: $paragraphFontSize
 
+.about-me p
+  text-align: justify
+  width: 100%
+
 .about-me-pic
-  width: 20em
+  width: 35%
   height: auto
   float: left
   border-radius: 5%
-  margin-left: 2%
-  margin-right: 4%
+  margin-left: 1em
+  margin-right: 1em
   padding: .2em
   box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.25)
+
+.about-text-container
+  display: inline-block
+  width: 60%
+  padding: 0 0.5em 0.5em
 
 .experience
   padding-top: 2%
@@ -78,11 +87,14 @@
   margin: 0
   padding: 0
 
+.project-header
+  font-size: 2.5em
+
 .portfolio
   padding-top: 5%
   padding-bottom: 5%
   text-align: center
-  @include backgroundToFont($lightFontColor)
+  @include backgroundToFont($darkFontColor)
 
 .portfolio-paragraph
   margin-bottom: .3em
@@ -139,7 +151,7 @@
 .main-project-paragraph
   vertical-align: middle
   font-family: $textFont, sans-serif
-  color: $darkFontColor
+  color: $lightFontColor
 
 .project-paragraph
   vertical-align: middle

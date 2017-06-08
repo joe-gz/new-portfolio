@@ -8,13 +8,13 @@ import Experience from './Body/Experience';
 import Portfolio from './Body/Projects';
 
 class App extends Component {
-  // <Header />
+  // <Intro />
   render() {
     return (
       <div className="App">
-        <Intro />
-        <Portfolio />
+        <Header />
         <About />
+        <Portfolio />
         <Experience />
         <Footer />
       </div>

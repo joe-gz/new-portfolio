@@ -6,7 +6,7 @@ class Footer extends Component {
       <footer>
         <span className='anchor' id='contactAnchor'></span>
         <div className='contact'>
-          <h1>
+          <h1 className='project-header'>
             Contact Information
           </h1>
           <div>

@@ -31,7 +31,7 @@ class Portfolio extends Component {
       <div>
         <span className='anchor' id='portfolioAnchor'></span>
         <div className='portfolio'>
-          <h1>Some of my work!</h1>
+          <h1 className='project-header'>See My Work</h1>
           <div className='main-project'>
             <div className='main-project-image-container'>
               <img className='main-portfolio-image' src={image} alt='spotlight' />
