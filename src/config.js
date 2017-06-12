@@ -17,7 +17,7 @@ export const projectArray = [
     description: 'A React application that provides a resource to research cultural and artistic ventures around the Baltimore area.'
   },
   {
-    link: 'https://beerlogger.herokuapp.com/',
+    link: 'https://s3.amazonaws.com/joegz.com/s3-images/soundburst.mov',
     image: 'https://s3.amazonaws.com/joegz.com/s3-images/soundburst.png',
     title: 'Soundburst',
     description: 'An R Shiny application, built for the Smithsonian to upload sound files from nature and identify the species.'

@@ -1,6 +1,13 @@
 import React, { Component } from 'react';
+import $ from 'jquery';
+import smoothScroll from 'jquery-smooth-scroll';
 
 class Header extends Component {
+
+  componentDidMount() {
+    $('a').smoothScroll();
+  }
+
   render() {
     return (
       <nav>

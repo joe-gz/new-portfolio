@@ -8,7 +8,6 @@ class Portfolio extends Component {
     const secondaryProjectArray = [];
     let image;
     projectArray.forEach((project, i) => {
-      console.log(project);
       secondaryProjectArray.push(
         <SecondaryProject key={project.title} link={project.link} image={project.image} title={project.title} description={project.description} />
       )

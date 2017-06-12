@@ -8,6 +8,10 @@ import Experience from './Body/Experience';
 import Portfolio from './Body/Projects';
 
 class App extends Component {
+
+  // componentDidMount() {
+  //
+  // }
   // <Intro />
   render() {
     return (
