@@ -55,20 +55,23 @@ body
   margin-top: -2.8em /*same height as header*/
   visibility: hidden
 
-.column
-  float: left
-  border-radius: 5px
-  text-align: center
+.flex-row
+  display: flex
+  justify-content: space-between
+  transition: all 1s ease-out
 
-.row:before, .row:after
-  content: ''
-  display: table
-
-.row:after
-  clear: both
-
-.row, .column
-  box-sizing: border-box
+// .column
+//   float: left
+//   // border-radius: 5px
+//   text-align: center
+//
+// .row:before, .row:after
+//   content: ''
+//   display: table
+//
+// .row:after
+//   clear: both
+//
 
 .column-1
   width: 6.333%
@@ -94,14 +97,14 @@ body
   width: 89.66%
 .column-12
   width: 98%
-
-.middle > .column
-  height: 400px
-  line-height: 400px
-
-.header > .column,
-.footer > .column
-  padding: 25px
+//
+// .middle > .column
+//   height: 400px
+//   line-height: 400px
+//
+// .header > .column,
+// .footer > .column
+//   padding: 25px
 
 .header ul
   margin: auto
@@ -114,8 +117,49 @@ body
   .column
     margin: 1% 0 1% 0%
     width: 100%
-//
-//
-// @keyframes App-logo-spin
-//   from transform: rotate(0deg)
-//   to transform: rotate(360deg)
+
+@media only screen and (max-width: 980px)
+  .flex-row
+    display: block
+  .column-3
+    width: 20em !important
+    display: inline-block
+    padding: 1em
+
+@media only screen and (max-width: 870px)
+  .about-me
+    display: block
+    padding-bottom: 1em
+  .about-me-pic
+    float: none
+    display: block
+    margin: 0 auto
+  .about-text-container
+    width: 75%
+    padding: 1em 0.5em 0.5em
+
+@media only screen and (max-width: 500px)
+  .about-text-container
+    width: 90%
+  .about-me
+    padding-top: 4em
+  .main-project-image-container, .project-text-container
+    width: auto
+    float: none
+  .main-portfolio-image
+    height: 25em
+  .project-title
+    margin-bottom: 0
+  .main-project-paragraph, .project-title
+    margin-top: 0.5em
+  .main-project
+    margin: 2em auto 0.5em
+  .project-text-wrapper
+    position: relative
+    padding: 0
+    transform: translateY(0)
+  .project-paragraph
+    color: $lightFontColor
+    margin: 0.5em 0 0
+  .column-3
+    padding: 1em 1em 0

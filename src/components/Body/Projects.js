@@ -1,9 +1,6 @@
 import React, { Component } from 'react';
 import SecondaryProject from './OtherProjects';
 import {spotlight, projectArray} from '../../config';
-import image from '../../images/3dates.jpg'
-import secondImage from '../../images/baseballLeague2.png';
-import thirdImage from '../../images/beerLogger2.png';
 
 class Portfolio extends Component {
 
@@ -11,14 +8,9 @@ class Portfolio extends Component {
     const secondaryProjectArray = [];
     let image;
     projectArray.forEach((project, i) => {
-      if (i === 0) {
-        image = secondImage;
-      } else {
-        image = thirdImage
-      }
       console.log(project);
       secondaryProjectArray.push(
-        <SecondaryProject key={project.title} link={project.link} image={image} title={project.title} description={project.description} />
+        <SecondaryProject key={project.title} link={project.link} image={project.image} title={project.title} description={project.description} />
       )
     });
     console.log(secondaryProjectArray);
@@ -34,7 +26,7 @@ class Portfolio extends Component {
           <h1 className='project-header'>See My Work</h1>
           <div className='main-project'>
             <div className='main-project-image-container'>
-              <img className='main-portfolio-image' src={image} alt='spotlight' />
+              <img className='main-portfolio-image' src={spotlight.image} alt='spotlight' />
             </div>
             <div className='project-text-container'>
               <h2 className = 'project-title'>{spotlight.title}</h2>
@@ -44,7 +36,7 @@ class Portfolio extends Component {
               </a>
             </div>
           </div>
-          <div className = 'row second-projects'>
+          <div className = 'flex-row second-projects'>
             {secondaryProjectArray}
           </div>
         </div>

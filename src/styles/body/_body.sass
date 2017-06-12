@@ -24,7 +24,7 @@
 .about-me
   @include backgroundToFont($lightFontColor)
   padding-top: 5em
-  padding-bottom: 10%
+  padding-bottom: 2em
   display: flex
   align-items: center
 
@@ -35,17 +35,18 @@
   // padding-top: 2%
   text-align: left
   font-family: $textFont, sans-serif
-  font-size: $paragraphFontSize
+  // font-size: $paragraphFontSize
 
 .about-me p
   text-align: justify
   width: 100%
+  font-size: 1.2em
 
 .about-me-pic
   width: 20em
   height: auto
   float: left
-  border-radius: 10px
+  // border-radius: 10px
   margin-left: 1em
   margin-right: 1em
   padding: .2em
@@ -89,7 +90,7 @@
   padding: 0
 
 .project-header
-  font-size: 2.5em
+  font-size: 2em
 
 .portfolio
   padding-top: 5%
@@ -111,7 +112,7 @@
   margin: 2em auto
 
 .second-projects
-  width: 75%
+  width: 95%
   margin: 0 auto
 
 // .main-project::before,
@@ -122,17 +123,17 @@
   right: 0
   bottom: 0
   left: 0
-  border-radius: 5%
+  // border-radius: 5%
   background: transparent
   transition: background .35s ease-out
 // .main-project:hover::before,
 .project-card:hover::before
-  background: rgba(0, 0, 0, .85)
-  border-radius: 5%
+  background: rgba(255, 255, 255, .85)
+  // border-radius: 5%
 
 .main-portfolio-image,.portfolio-image
-  border-radius: 5%
-  box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.75)
+  // border-radius: 5%
+  box-shadow: 2px 2px 2px 0px rgba(0,0,0,0.75)
 
 .portfolio-image
   width: 100%
@@ -142,7 +143,7 @@
 //   width: 100%
 
 .project-card
-  margin: 1%
+  // margin: 0.5em
   position: relative
   overflow: hidden
 
@@ -157,25 +158,25 @@
 .project-paragraph
   vertical-align: middle
   font-family: $textFont, sans-serif
-  color: $lightFontColor
+  color: $darkFontColor
 
 .project-title
   font-family: $headerFont, serif
-  font-size: 2em
+  // font-size: 2em
   vertical-align: middle
   color: $colorPrimary
 
 .project-text-wrapper
   position: absolute
-  width: 75%
+  // width: 75%
   top: 0
   right: 0
   bottom: 0
   left: 0
   margin: 0 auto
   padding: 5%
-  color: $lightFontColor
-  transform: translateY(100%)
+  color: $darkFontColor
+  transform: translateY(-100%)
   transition: transform .35s ease-out
 
 .main-project:hover .project-text-wrapper
@@ -200,7 +201,8 @@
   font-family: $textFont
   font-size: 1.15em
   border: none
-  background: #63a313
+  // background: #63a313
+  border: 2px solid #63a313
   color: #E5E5E5
   padding: 0.67em
   margin: 0.67em auto
@@ -209,4 +211,5 @@
   width: 80%
   &:hover
     background: darken(#63a313,15%)
+    border: 2px solid darken(#63a313,15%)
     width: 85%

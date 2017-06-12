@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 class SecondaryProject extends Component {
   render() {
     return (
-      <div className = 'column column-4 project-card'>
+      <div className = 'column-3 project-card'>
         <a href={this.props.link}>
         <img className='portfolio-image' src={this.props.image} alt='secondary' />
           <div className='project-text-wrapper'>
