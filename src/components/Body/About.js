@@ -6,7 +6,7 @@ class About extends Component {
     return (
       <div>
         <span className='anchor' id='aboutMeAnchor'></span>
-        <div className='about-me'>
+        <div className='about-me section-container'>
           <img className='about-me-pic' src={profilePic} alt='about' />
           <div className='about-text-container'>
             <p>

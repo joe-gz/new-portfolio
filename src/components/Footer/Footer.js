@@ -5,7 +5,7 @@ class Footer extends Component {
     return (
       <footer>
         <span className='anchor' id='contactAnchor'></span>
-        <div className='contact'>
+        <div className='contact section-container'>
           <h1 className='project-header'>
             Contact Information
           </h1>

@@ -17,7 +17,9 @@ nav {
   list-style-type: none;
   margin: 0 auto;
   padding: 0;
-  background-color: rgba(0, 0, 0, 0.8); }
+  background-color: rgba(0, 0, 0, 0.8);
+  padding-left: 10%;
+  padding-right: 10%; }
 
 .links {
   display: inline-block;
@@ -51,7 +53,10 @@ nav {
   .header-name {
     padding: 0;
     margin: 0 auto;
-    float: none; } }
+    float: none; }
+  .headerNav {
+    padding-left: 0;
+    padding-right: 0; } }
 
 .top {
   padding-top: 4%;
@@ -256,6 +261,9 @@ nav {
     border: 2px solid #395e0b;
     width: 85%; }
 
+.feature-project-container {
+  color: #E5E5E5; }
+
 .contact {
   color: #E5E5E5;
   background-color: rgba(73, 81, 89, 0.95);
@@ -341,6 +349,10 @@ body {
   background: url("../images/IMG_1871.JPG") no-repeat center center fixed;
   background-attachment: fixed;
   background-size: cover; }
+
+.section-container {
+  padding-left: 10%;
+  padding-right: 10%; }
 
 .anchor {
   display: block;
@@ -445,4 +457,7 @@ body {
     color: #E5E5E5;
     margin: 0.5em 0 0; }
   .column-3 {
-    padding: 1em 1em 0; } }
+    padding: 1em 1em 0 0; }
+  .section-container {
+    padding-left: 0;
+    padding-right: 0; } }
