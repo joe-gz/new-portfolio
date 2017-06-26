@@ -7,13 +7,13 @@ class About extends Component {
       <div>
         <span className='anchor' id='aboutMeAnchor'></span>
         <div className='about-me section-container'>
-          <div className='max-width'>            
+          <div className='max-width'>
             <img className='about-me-pic' src={profilePic} alt='about' />
             <div className='about-text-container'>
               <h1 className='about-me-header'>Hi! I'm Joe Glatman Zaretsky</h1>
               <h2 className='about-me-header'>I am a full stack Web Developer</h2>
               <p>
-                I am currently working as an Application Developer at Blue Raster.
+                I'm currently working as an Application Developer at Blue Raster.
                 At the moment I work primarily with React, but I have experience with many technologies. Keep scrolling to find out more!
               </p>
               <p>
