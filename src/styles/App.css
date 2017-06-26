@@ -133,6 +133,9 @@ h2.about-me-header {
   margin: 0;
   padding-top: 2%; }
 
+.skills, .prior-head {
+  font-size: 2.25em; }
+
 .experience p {
   font-size: 1em;
   text-align: center; }
@@ -220,6 +223,20 @@ h2.about-me-header {
   font-size: 2em;
   margin-bottom: 0; }
 
+.project-title-other {
+  font-family: "Varela Round", sans-serif, serif;
+  vertical-align: middle;
+  color: #63a313;
+  text-align: center;
+  font-size: 1.5em;
+  margin-bottom: 0; }
+
+.other-header {
+  border-top: 1px dotted #E5E5E5;
+  padding-top: 1.5em;
+  margin-top: 1.5em;
+  margin-bottom: 1.5em; }
+
 .project-text-wrapper {
   position: absolute;
   top: 0;
@@ -257,7 +274,7 @@ h2.about-me-header {
   border: 2px solid #63a313;
   color: #E5E5E5;
   padding: 0.67em;
-  margin: 0.67em auto;
+  margin: 1em 0;
   text-decoration: none;
   transition: all ease 0.33s;
   width: 80%; }

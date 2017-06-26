@@ -35,7 +35,7 @@ class Portfolio extends Component {
               </a>
             </div>
           </div>
-          <h2>Some other cool projects</h2>
+          <h2 className='other-header'>Some other cool projects</h2>
           <div className = 'flex-row second-projects'>
             {secondaryProjectArray}
           </div>
