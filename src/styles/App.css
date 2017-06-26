@@ -1,4 +1,5 @@
 @import url(https://fonts.googleapis.com/css?family=Varela+Round);
+@import url(./core.css);
 nav {
   position: relative;
   text-align: center;
@@ -12,7 +13,7 @@ nav {
   width: 100%;
   top: 0;
   box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.15);
-  height: 2.8em;
+  height: 3.3em;
   list-style-type: none;
   margin: 0 auto;
   padding: 0;
@@ -22,13 +23,13 @@ nav {
 
 .links {
   display: inline-block;
-  margin: 0 0.5em; }
+  margin: 0 1.25em; }
 
 .header-name {
   height: 100%;
   color: #E5E5E5;
   padding-left: .2em;
-  padding-top: .1em;
+  padding-top: .2em;
   font-size: 2em;
   float: left; }
 
@@ -88,6 +89,14 @@ nav {
   display: flex;
   align-items: center; }
 
+.about-me-header {
+  text-align: left; }
+
+h2.about-me-header {
+  color: #63a313;
+  margin-top: 0;
+  font-size: 2em; }
+
 .about-me p, .experience p {
   margin-top: 0;
   font-weight: normal;
@@ -101,17 +110,13 @@ nav {
   font-size: 1.2em; }
 
 .about-me-pic {
-  width: 20em;
-  height: auto;
-  float: left;
-  margin-left: 1em;
-  margin-right: 1em;
-  padding: .2em; }
+  width: 22em;
+  height: auto; }
 
 .about-text-container {
   display: inline-block;
   width: calc(100% - 25em);
-  padding: 0 0.5em 0.5em; }
+  padding: 1em; }
 
 .experience {
   padding-top: 2%;
@@ -145,15 +150,12 @@ nav {
   margin: 0;
   padding: 0; }
 
-.project-header {
-  font-size: 2em; }
-
 .portfolio {
   padding-top: 5%;
   padding-bottom: 5%;
   text-align: center;
-  color: #E5E5E5;
-  background-color: rgba(58, 56, 59, 0.95); }
+  background: rgba(0, 0, 0, 0.85);
+  color: #E5E5E5; }
 
 .portfolio-paragraph {
   margin-bottom: .3em;
@@ -202,7 +204,8 @@ nav {
 .main-project-paragraph {
   vertical-align: middle;
   font-family: "Varela Round", sans-serif, sans-serif;
-  color: #E5E5E5; }
+  color: #E5E5E5;
+  text-align: left; }
 
 .project-paragraph {
   vertical-align: middle;
@@ -212,7 +215,10 @@ nav {
 .project-title {
   font-family: "Varela Round", sans-serif, serif;
   vertical-align: middle;
-  color: #63a313; }
+  color: #63a313;
+  text-align: left;
+  font-size: 2em;
+  margin-bottom: 0; }
 
 .project-text-wrapper {
   position: absolute;
@@ -338,6 +344,7 @@ nav {
 
 h1 {
   margin: 0;
+  font-weight: 300;
   font-family: "Varela Round", sans-serif, serif;
   font-size: 3em;
   text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15); }
@@ -351,8 +358,8 @@ body {
   font-family: "Varela Round", sans-serif; }
 
 .section-container {
-  padding-left: 10%;
-  padding-right: 10%; }
+  padding-left: 5em;
+  padding-right: 5em; }
 
 .anchor {
   display: block;

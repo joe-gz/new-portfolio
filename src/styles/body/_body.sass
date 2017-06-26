@@ -28,6 +28,14 @@
   display: flex
   align-items: center
 
+.about-me-header
+  text-align: left
+
+h2.about-me-header
+  color: $colorPrimary
+  margin-top: 0
+  font-size: 2em
+
 .about-me p, .experience p
   margin-top: 0
   font-weight: normal
@@ -43,19 +51,19 @@
   font-size: 1.2em
 
 .about-me-pic
-  width: 20em
+  width: 22em
   height: auto
-  float: left
-  // border-radius: 10px
-  margin-left: 1em
-  margin-right: 1em
-  padding: .2em
-  // box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.25)
+  // float: left
+  // // border-radius: 10px
+  // margin-left: 1em
+  // margin-right: 1em
+  // padding: .2em
+  // // box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.25)
 
 .about-text-container
   display: inline-block
   width: calc(100% - 25em)
-  padding: 0 0.5em 0.5em
+  padding: 1em
 
 .experience
   padding-top: 2%
@@ -89,14 +97,12 @@
   margin: 0
   padding: 0
 
-.project-header
-  font-size: 2em
-
 .portfolio
   padding-top: 5%
   padding-bottom: 5%
   text-align: center
-  @include backgroundToFont($darkFontColor)
+  background: rgba(0, 0, 0, 0.85)
+  color: $lightFontColor
 
 .portfolio-paragraph
   margin-bottom: .3em
@@ -154,6 +160,7 @@
   vertical-align: middle
   font-family: $textFont, sans-serif
   color: $lightFontColor
+  text-align: left
 
 .project-paragraph
   vertical-align: middle
@@ -165,6 +172,9 @@
   // font-size: 2em
   vertical-align: middle
   color: $colorPrimary
+  text-align: left
+  font-size: 2em
+  margin-bottom: 0
 
 .project-text-wrapper
   position: absolute

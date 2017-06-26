@@ -6,7 +6,7 @@ export const spotlight = {
     'https://s3.amazonaws.com/joegz.com/s3-images/date-select.png'
   ],
   title: '3Dates',
-  description: 'A fun, social, application, aimed at providing users with three random activities to do at a given time.'
+  description: 'A fun, social, application, aimed at providing users with three random activities to do at a given time. Using the APIs from Seatgeek, EventBrite, and OpenTable, this Angular application is available in the iTunes store'
 };
 
 export const projectArray = [
