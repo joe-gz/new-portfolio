@@ -1,6 +1,6 @@
 export const spotlight = {
   link: 'http://3datesapp.com/',
-  image: 'https://s3.amazonaws.com/joegz.com/s3-images/3dates.jpg',
+  image: 'https://s3.amazonaws.com/joegz.com/s3-images/3date.png',
   secondaryImages: [
     'https://s3.amazonaws.com/joegz.com/s3-images/single-date.png',
     'https://s3.amazonaws.com/joegz.com/s3-images/date-select.png'
