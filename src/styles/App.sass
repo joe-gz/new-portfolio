@@ -125,9 +125,24 @@ body
     margin: 1% 0 1% 0%
     width: 100%
 
+@media only screen and (max-width: 1085px)
+  h2.about-me-header
+    font-size: 1.5em
+
+
 @media only screen and (max-width: 980px)
-  .align-center
+  .main-project
+    display: table
+  .project-text-container
     display: block
+    width: auto
+    max-width: 25em
+    margin: 0 auto
+  .main-project-image-container
+    display: table-header-group
+    margin: 0 auto
+  .main-project-button
+    margin: 1em auto
   .about-text-container
     display: block
     width: auto
@@ -137,6 +152,12 @@ body
     width: 20em !important
     display: inline-block
     padding: 1em
+  .about-me-header
+    text-align: center
+  .about-me-pic-container
+    display: block
+    width: 22em
+    margin: 0 auto
 
 @media only screen and (max-width: 870px)
   .about-me
@@ -144,15 +165,17 @@ body
     padding-bottom: 1em
   .about-me-pic
     float: none
-    display: block
-    margin: 0 auto
+    // display: block
+    // margin: 0 auto
   .about-text-container
-    width: 75%
+    // width: 75%
     padding: 1em 0.5em 0.5em
+    margin: 0 auto
 
-@media only screen and (max-width: 500px)
+@media only screen and (max-width: 768px)
   .about-text-container
     width: 90%
+    margin: 0 auto
   .about-me
     padding-top: 4em
   .main-project-image-container
@@ -176,6 +199,20 @@ body
     margin: 0.5em 0 0
   .column-3
     padding: 1em 1em 0 0
+    display: block
+    margin: 0 auto
   .section-container
     padding-left: 0
     padding-right: 0
+
+@media only screen and (max-width: 632px)
+  h1.about-me-header
+    font-size: 2em
+  h2.about-me-header
+    font-size: 1.5em
+
+@media only screen and (max-width: 400px)
+  .about-me-pic
+    width: 100%
+  .about-me-pic-container
+    width: 100%

@@ -47,9 +47,11 @@ nav {
   .nav-links a:hover {
     color: #63a313; }
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 675px) {
   .nav-links {
-    display: none; }
+    display: none; } }
+
+@media only screen and (max-width: 500px) {
   .header-name {
     padding: 0;
     margin: 0 auto;
@@ -111,7 +113,19 @@ h2.about-me-header {
 
 .about-me-pic {
   width: 22em;
-  height: auto; }
+  height: auto;
+  vertical-align: middle; }
+
+.about-me-pic-container {
+  position: relative; }
+
+.about-me-pic-container::after {
+  content: '';
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  box-shadow: 0 0 0 1em rgba(255, 255, 255, 0.5) inset;
+  left: 0; }
 
 .about-text-container {
   display: inline-block;
@@ -445,9 +459,23 @@ body {
     margin: 1% 0 1% 0%;
     width: 100%; } }
 
+@media only screen and (max-width: 1085px) {
+  h2.about-me-header {
+    font-size: 1.5em; } }
+
 @media only screen and (max-width: 980px) {
-  .align-center {
-    display: block; }
+  .main-project {
+    display: table; }
+  .project-text-container {
+    display: block;
+    width: auto;
+    max-width: 25em;
+    margin: 0 auto; }
+  .main-project-image-container {
+    display: table-header-group;
+    margin: 0 auto; }
+  .main-project-button {
+    margin: 1em auto; }
   .about-text-container {
     display: block;
     width: auto; }
@@ -456,23 +484,28 @@ body {
   .column-3 {
     width: 20em !important;
     display: inline-block;
-    padding: 1em; } }
+    padding: 1em; }
+  .about-me-header {
+    text-align: center; }
+  .about-me-pic-container {
+    display: block;
+    width: 22em;
+    margin: 0 auto; } }
 
 @media only screen and (max-width: 870px) {
   .about-me {
     display: block;
     padding-bottom: 1em; }
   .about-me-pic {
-    float: none;
-    display: block;
-    margin: 0 auto; }
+    float: none; }
   .about-text-container {
-    width: 75%;
-    padding: 1em 0.5em 0.5em; } }
+    padding: 1em 0.5em 0.5em;
+    margin: 0 auto; } }
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 768px) {
   .about-text-container {
-    width: 90%; }
+    width: 90%;
+    margin: 0 auto; }
   .about-me {
     padding-top: 4em; }
   .main-project-image-container {
@@ -495,7 +528,21 @@ body {
     color: #E5E5E5;
     margin: 0.5em 0 0; }
   .column-3 {
-    padding: 1em 1em 0 0; }
+    padding: 1em 1em 0 0;
+    display: block;
+    margin: 0 auto; }
   .section-container {
     padding-left: 0;
     padding-right: 0; } }
+
+@media only screen and (max-width: 632px) {
+  h1.about-me-header {
+    font-size: 2em; }
+  h2.about-me-header {
+    font-size: 1.5em; } }
+
+@media only screen and (max-width: 400px) {
+  .about-me-pic {
+    width: 100%; }
+  .about-me-pic-container {
+    width: 100%; } }
