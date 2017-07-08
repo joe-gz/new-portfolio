@@ -17,6 +17,12 @@ export const projectArray = [
     description: 'A React application that provides a resource to research cultural and artistic ventures around the Baltimore area.'
   },
   {
+    link: 'http://www.landmarkmap.org/map/',
+    image: 'https://s3.amazonaws.com/joegz.com/s3-images/landmark.png',
+    title: 'Landmark',
+    description: 'React application displaying data points and polygons of indigenous and community lands around the world.'
+  },
+  {
     link: 'https://s3.amazonaws.com/joegz.com/s3-images/soundburst.mov',
     image: 'https://s3.amazonaws.com/joegz.com/s3-images/soundburst.png',
     title: 'Soundburst',
@@ -27,13 +33,14 @@ export const projectArray = [
     image: 'https://s3.amazonaws.com/joegz.com/s3-images/baseballLeague2.png',
     title: 'baseballVisuals',
     description: 'A fantasy sports MEAN stack app, provides users a visualization of their data for auction fantasy baseball leagues.'
-  },
-  {
-    link: 'https://beerlogger.herokuapp.com/',
-    image: 'https://s3.amazonaws.com/joegz.com/s3-images/beerLogger2.png',
-    title: 'beerLogger',
-    description: 'A social app, built in Rails and linked to BreweryDB API, allowing users to track and display beers they are drinking.'
   }
+  // ,
+  // {
+  //   link: 'https://beerlogger.herokuapp.com/',
+  //   image: 'https://s3.amazonaws.com/joegz.com/s3-images/beerLogger2.png',
+  //   title: 'beerLogger',
+  //   description: 'A social app, built in Rails and linked to BreweryDB API, allowing users to track and display beers they are drinking.'
+  // }
   // ,
   // {
   //   link: 'https://beerlogger.herokuapp.com/',
