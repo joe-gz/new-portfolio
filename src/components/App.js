@@ -9,10 +9,6 @@ import Portfolio from './Body/Projects';
 
 class App extends Component {
 
-  // componentDidMount() {
-  //
-  // }
-  // <Intro />
   render() {
     return (
       <div className="App">

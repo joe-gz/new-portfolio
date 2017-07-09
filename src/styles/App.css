@@ -193,19 +193,6 @@ h2.about-me-header {
   width: 95%;
   margin: 0 auto; }
 
-.project-card::before {
-  content: ' ';
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  background: transparent;
-  transition: background .35s ease-out; }
-
-.project-card:hover::before {
-  background: rgba(255, 255, 255, 0.85); }
-
 .main-portfolio-image, .portfolio-image {
   box-shadow: 2px 2px 2px 0px rgba(0, 0, 0, 0.75); }
 
@@ -221,7 +208,8 @@ h2.about-me-header {
 
 .project-card {
   position: relative;
-  overflow: hidden; }
+  overflow: hidden;
+  cursor: pointer; }
 
 .project-card a {
   text-decoration: none; }
@@ -274,9 +262,6 @@ h2.about-me-header {
 .main-project:hover .project-text-wrapper {
   transform: translateY(0); }
 
-.project-card:hover .project-text-wrapper {
-  transform: translateY(0); }
-
 .main-project-image-container {
   display: inline-block;
   width: 48%; }
@@ -307,6 +292,24 @@ h2.about-me-header {
 
 .feature-project-container {
   color: #E5E5E5; }
+
+.portfolio-full-container {
+  position: relative; }
+
+@media only screen and (min-width: 500px) {
+  .project-card::before {
+    content: ' ';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: transparent;
+    transition: background .35s ease-out; }
+  .project-card:hover::before {
+    background: rgba(255, 255, 255, 0.85); }
+  .project-card:hover .project-text-wrapper {
+    transform: translateY(0); } }
 
 .contact {
   color: #E5E5E5;
