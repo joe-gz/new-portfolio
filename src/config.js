@@ -14,7 +14,7 @@ export const projectArray = [
     link: 'https://geoloom.org/beta/',
     image: 'https://s3.amazonaws.com/joegz.com/s3-images/geoloom.png',
     title: 'GeoLoom',
-    description: 'A React application that provides a resource to research cultural and artistic ventures around the Baltimore area.'
+    description: 'A React and Redux application that provides a resource to research cultural and artistic ventures around the Baltimore area.'
   },
   {
     link: 'http://www.landmarkmap.org/map/',

@@ -16,7 +16,7 @@ class About extends Component {
               <h2 className='about-me-header'>I am a full stack Web Developer</h2>
               <p>
                 I'm currently working as an Application Developer at Blue Raster.
-                At the moment I work primarily with React, but I have experience with many technologies. Keep scrolling to find out more!
+                At the moment I work primarily with React and Redux, but I have experience with many technologies. Keep scrolling to find out more!
               </p>
               <p>
                 When I'm not working on improving my development skills, I'm either running around outside, or ideally traveling to a new country.
