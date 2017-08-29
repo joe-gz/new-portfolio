@@ -11,7 +11,7 @@ export const spotlight = {
 
 export const projectArray = [
   {
-    link: 'https://geoloom.org/beta/',
+    link: 'https://geoloom.org/',
     image: 'https://s3.amazonaws.com/joegz.com/s3-images/geoloom.png',
     title: 'GeoLoom',
     description: 'A React and Redux application that provides a resource to research cultural and artistic ventures around the Baltimore area.'
