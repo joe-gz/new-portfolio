@@ -16,13 +16,13 @@ class Footer extends Component {
             <a href='mailto:Jglatmanzaretsky@gmail.com'>
               <div className='contact-link email-icon'></div>
             </a>
-            <a href='https://www.linkedin.com/pub/joseph-glatman-zaretsky/10/1/a29' title='linkedIn'>
+            <a target="_blank" href='https://www.linkedin.com/in/joe-glatman-zaretsky-a2900110/' title='linkedIn'>
               <div className='contact-link linkedin-icon'></div>
             </a>
-            <a href='https://www.facebook.com/joe.zaretsky' title='facebook'>
+            <a target="_blank" href='https://www.facebook.com/joe.zaretsky' title='facebook'>
               <div className='contact-link facebook-icon'></div>
             </a>
-            <a className = 'blog' href='https://joegz.wordpress.com/' title='blog'>
+            <a className = 'blog' target="_blank" href='https://joegz.wordpress.com/' title='blog'>
               <div className='contact-link blog-link'>
                 Blog
               </div>
