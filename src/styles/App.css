@@ -365,6 +365,12 @@ h2.about-me-header {
   background-size: contain;
   color: white; }
 
+.twitter-icon {
+  background: url("../images/twitter.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  color: white; }
+
 .App {
   text-align: center; }
 

@@ -22,10 +22,8 @@ class Footer extends Component {
             <a target="_blank" href='https://www.facebook.com/joe.zaretsky' title='facebook'>
               <div className='contact-link facebook-icon'></div>
             </a>
-            <a className = 'blog' target="_blank" href='https://joegz.wordpress.com/' title='blog'>
-              <div className='contact-link blog-link'>
-                Blog
-              </div>
+            <a target="_blank" href='https://twitter.com/therealJGZ' title='twitter'>
+              <div className='contact-link twitter-icon'></div>
             </a>
           </div>
           <div>
