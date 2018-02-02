@@ -2,7 +2,7 @@
   "name": "new-portfolio",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://joe-gz.github.io/new-portfolio",
+  "homepage": "http://joe-gz.com/",
   "dependencies": {
     "anchor-scroll": "^2.0.0",
     "jquery": "^3.2.1",

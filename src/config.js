@@ -11,6 +11,12 @@ export const spotlight = {
 
 export const projectArray = [
   {
+    link: 'http://ftpcreative.com/',
+    image: 'https://s3.amazonaws.com/joegz.com/s3-images/ftpCreative.png',
+    title: 'ftpCreative',
+    description: 'A React and Redux website for a small company my friend, Brendan English, and I have started which allows us to get creative with our work.'
+  },
+  {
     link: 'https://geoloom.org/',
     image: 'https://s3.amazonaws.com/joegz.com/s3-images/geoloom.png',
     title: 'GeoLoom',
@@ -27,12 +33,6 @@ export const projectArray = [
     image: 'https://s3.amazonaws.com/joegz.com/s3-images/soundburst.png',
     title: 'Soundburst',
     description: 'An R Shiny application, built for the Smithsonian to upload sound files from nature and identify the species.'
-  },
-  {
-    link: 'https://baseball-visuals.herokuapp.com/#/leagues/82326',
-    image: 'https://s3.amazonaws.com/joegz.com/s3-images/baseballLeague2.png',
-    title: 'baseballVisuals',
-    description: 'A fantasy sports MEAN stack app, provides users a visualization of their data for auction fantasy baseball leagues.'
   }
   // ,
   // {
