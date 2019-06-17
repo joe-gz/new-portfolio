@@ -15,7 +15,7 @@ class About extends Component {
               <h1 className='about-me-header'>Hi! I'm Joe Glatman Zaretsky</h1>
               <h2 className='about-me-header'>I am a full stack Web Developer</h2>
               <p>
-                I'm currently working as an Application Developer at Blue Raster.
+                I'm currently working as a Front End Engineer at CAVA.
                 At the moment I work primarily with React and Redux, but I have experience with many technologies. Keep scrolling to find out more!
               </p>
               <p>
