@@ -2,7 +2,7 @@
   "name": "new-portfolio",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://joegz.com/",
+  "homepage": "http://joegz.com/",
   "dependencies": {
     "anchor-scroll": "^2.0.0",
     "jquery": "^3.2.1",
