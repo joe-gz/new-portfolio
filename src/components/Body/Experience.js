@@ -8,8 +8,8 @@ class Experience extends Component {
         <div className='experience section-container'>
           <div className='max-width'>
             <h2 className = 'skills'>Skills</h2>
-            <p className='skills-paragraph'>JavaScript | React | React Native | jQuery | Angular | HTML5 | CSS | AJAX | JSON | D3.js | Ruby | Rails </p>
-            <p className='skills-paragraph'>Firebase | Node | R Shiny | AWS | PostgreSQL | MYSQL | Microsoft Access | Git | GitHub | Heroku</p>
+            <p className='skills-paragraph'>JavaScript | React | React Native | jQuery | Angular | HTML5 | CSS | D3.js </p>
+            <p className='skills-paragraph'>Elixir | Firebase | Node | R Shiny | Ruby | Rails | AWS | PostgreSQL | Git | GitHub | Heroku</p>
             <h2 className = 'prior-head'>Experience</h2>
             <div className = 'prior'>
               <p>As an Application Developer at Blue Raster, I work on many different projects, using a host of technologies. Whether integrating the Esri JS API into a React app, or creating an R Shiny Application that analyzes sound waves, I am proving my abilities to learn on the fly and provide excellent end product.</p>
