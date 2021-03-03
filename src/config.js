@@ -1,69 +1,37 @@
 export const spotlight = {
-  link: 'http://3datesapp.com/',
-  image: 'https://s3.amazonaws.com/joegz.com/s3-images/3date.png',
+  link: 'https://apps.apple.com/us/app/cava-order-online/id726270499',
+  image: require('./images/cava_spotlight.jpeg'),
   secondaryImages: [
     'https://s3.amazonaws.com/joegz.com/s3-images/single-date.png',
     'https://s3.amazonaws.com/joegz.com/s3-images/date-select.png'
   ],
-  title: '3Dates',
-  description: 'A fun, social, application, aimed at providing users with three random activities to do at a given time. Using the APIs from Seatgeek, EventBrite, and OpenTable, this Angular application is available in the iTunes store'
+  title: 'CAVA',
+  description: 'My current job - The new mobile app was released January 2021, while I also maintain a legacy web application. React Native, Elixir API.'
 };
 
 export const projectArray = [
   {
     link: 'http://ftpcreative.com/',
-    image: 'https://s3.amazonaws.com/joegz.com/s3-images/ftpCreative.png',
+    image: require('./images/ftpcreative.png'),
     title: 'ftpCreative',
     description: 'A React and Redux website for a small company my friend, Brendan English, and I have started which allows us to get creative with our work.'
   },
   {
-    link: 'https://geoloom.org/',
-    image: 'https://s3.amazonaws.com/joegz.com/s3-images/geoloom.png',
-    title: 'GeoLoom',
-    description: 'A React and Redux application that provides a resource to research cultural and artistic ventures around the Baltimore area.'
+    link: 'https://www.designgapp.com/projects',
+    image: require('./images/designgapp.png'),
+    title: 'DesignGapp',
+    description: 'A React FE, Firebase BE application, DesignGapp is a tool to help create design project documentation and styleguides. You can collaborate with your team and clients with this intuitive and helpful design system.'
   },
   {
-    link: 'http://www.landmarkmap.org/map/',
-    image: 'https://s3.amazonaws.com/joegz.com/s3-images/landmark.png',
-    title: 'Landmark',
-    description: 'React application displaying data points and polygons of indigenous and community lands around the world.'
+    link: 'https://alluvion.net/',
+    image: require('./images/alluvion.png'),
+    title: 'Alluvion',
+    description: 'A React FE, Firebase BE application, providing informational resources to customers of Alluvion.'
   },
   {
-    link: 'https://s3.amazonaws.com/joegz.com/s3-images/soundburst.mov',
-    image: 'https://s3.amazonaws.com/joegz.com/s3-images/soundburst.png',
-    title: 'Soundburst',
-    description: 'An R Shiny application, built for the Smithsonian to upload sound files from nature and identify the species.'
+    link: 'https://www.pierinasanchez.nyc/',
+    image: require('./images/pierinasanchez.png'),
+    title: 'Pierina Sanchez',
+    description: 'React application built for Pierina Sanchez, a candidate for city council in the 14th district of NYC.'
   }
-  // ,
-  // {
-  //   link: 'https://beerlogger.herokuapp.com/',
-  //   image: 'https://s3.amazonaws.com/joegz.com/s3-images/beerLogger2.png',
-  //   title: 'beerLogger',
-  //   description: 'A social app, built in Rails and linked to BreweryDB API, allowing users to track and display beers they are drinking.'
-  // }
-  // ,
-  // {
-  //   link: 'https://beerlogger.herokuapp.com/',
-  //   image: '../../images/3dates.jpg',
-  //   title: 'other',
-  //   description: 'A social app, built in Rails and linked to BreweryDB API, allowing users to track and display beers they are drinking.'
-  // }//,
-  // {
-  //   link: 'https://beerlogger.herokuapp.com/',
-  //   image: '../../images/3dates.jpg',
-  //   title: 'beerLogger',
-  //   description: 'A social app, built in Rails and linked to BreweryDB API, allowing users to track and display beers they are drinking.'
-  // },
-  // {
-  //   link: 'https://beerlogger.herokuapp.com/',
-  //   image: '../../images/3dates.jpg',
-  //   title: 'beerLogger',
-  //   description: 'A social app, built in Rails and linked to BreweryDB API, allowing users to track and display beers they are drinking.'
-  // },
-  // {
-  //   link: 'https://beerlogger.herokuapp.com/',
-  //   image: '../../images/3dates.jpg',
-  //   title: 'beerLogger',
-  //   description: 'A social app, built in Rails and linked to BreweryDB API, allowing users to track and display beers they are drinking.'
-  // }
 ]
