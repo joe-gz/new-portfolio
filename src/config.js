@@ -6,7 +6,7 @@ export const spotlight = {
     'https://s3.amazonaws.com/joegz.com/s3-images/date-select.png'
   ],
   title: 'CAVA',
-  description: 'My current job - The new mobile app was released January 2021, while I also maintain a legacy web application. React Native, Elixir API.'
+  description: 'My current job - The new mobile app was released January 2021, while I also maintain a legacy web application. Built with React Native, and an Elixir API.'
 };
 
 export const projectArray = [

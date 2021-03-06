@@ -19,9 +19,6 @@ class VideoModal extends Component {
       height = 200;
     }
 
-    console.log(window.innerWidth);
-    console.log(width);
-
     return (
       <Wrapper visible={this.props.visible} close={this.props.close}>
         <div>

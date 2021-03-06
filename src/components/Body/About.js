@@ -15,12 +15,12 @@ class About extends Component {
               <h1 className='about-me-header'>Hi! I'm Joe Glatman Zaretsky</h1>
               <h2 className='about-me-header'>I am a full stack Web Developer</h2>
               <p>
-                I'm currently working as a Front End Engineer at CAVA.
-                At the moment I work primarily with React and Redux, but I have experience with many technologies. Keep scrolling to find out more!
+                I'm currently working as a Software Engineer at CAVA.
+                At the moment I work primarily with React Native, React, and Elixir, but I have experience with many technologies.
               </p>
               <p>
-                When I'm not working on improving my development skills, I'm either running around outside, or ideally traveling to a new country.
-                I've hit six out of the seven continents, and 34 countries total; definitely a bit of an obsession!
+                When I'm not working on improving my development skills, I'm either running around outside, or ideally (pre-covid) traveling to a new country.
+                I've hit six out of the seven continents, and 34 countries total.
               </p>
             </div>
           </div>

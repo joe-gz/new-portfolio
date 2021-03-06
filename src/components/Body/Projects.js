@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import SecondaryProject from './OtherProjects';
 import {spotlight, projectArray} from '../../config';
-import VideoModal from '../Modals/VideoModal';
 
 class Portfolio extends Component {
 
@@ -14,13 +13,12 @@ class Portfolio extends Component {
 
   createSecondaryProject = () => {
     const secondaryProjectArray = [];
-    let image;
     projectArray.forEach((project, i) => {
       secondaryProjectArray.push(
         <SecondaryProject key={project.title} link={project.link} image={project.image} title={project.title} description={project.description} openModal={this.openModal} />
       )
     });
-    console.log(secondaryProjectArray);
+
     return secondaryProjectArray;
   }
 
@@ -62,7 +60,6 @@ class Portfolio extends Component {
             </div>
           </div>
         </div>
-        <VideoModal visible={this.state.modalVisible} close={this.closeModal}/>
       </div>
     );
   }
