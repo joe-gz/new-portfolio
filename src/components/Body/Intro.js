@@ -4,7 +4,7 @@ class Intro extends Component {
   render() {
     return (
       <div>
-        <span className='anchor' id='topAnchor'></span>
+        <span id='topAnchor'></span>
         <div className='top section-container'>
           <h1>Joe Glatman Zaretsky</h1>
           <p>

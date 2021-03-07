@@ -4,9 +4,8 @@ class Footer extends Component {
   render() {
     return (
       <footer>
-        <span className='anchor' id='contactAnchor'></span>
-        <div className='contact section-container'>
-          <h1 className='project-header'>
+        <div className='contact section-container'  id='contactAnchor'>
+          <h1 className='footer__header'>
             Contact Information
           </h1>
           <div>

@@ -9,17 +9,20 @@
 
 @mixin backgroundToFont($background)
   color: contrastingColor($background)
-  background-color: fade-out($background, 0.05)
 
 
 @import './variables'
 @import './core.css'
 @import './header/_header'
 @import './body/_body'
+@import './components/_introduction'
+@import './components/_projects'
+@import './components/_experience'
 @import './footer/_footer'
 
 .App
   text-align: center
+  background: $bodyBackground
 
 .App-logo
   animation: App-logo-spin infinite 20s linear
@@ -41,7 +44,6 @@ h1
   margin: 0
   font-weight: 300
   font-family: $headerFont, serif
-  font-size: 2.5em
   text-shadow: 0px 2px 4px rgba(0,0,0,0.15)
 
 body
@@ -52,15 +54,14 @@ body
   background-size: cover
   font-family: $textFont
 
+a
+  text-decoration: none
+
 .section-container
   padding-left: 5em
   padding-right: 5em
-
-.anchor
-  display: block
-  height: 2.8em /*same height as header*/
-  margin-top: -2.8em /*same height as header*/
-  visibility: hidden
+  padding-top: 100px
+  padding-bottom: 100px
 
 .flex-row
   display: flex
@@ -121,30 +122,19 @@ body
   list-style-type: none
 
 @media only screen and (max-width: 480px)
+  .App
+    padding: 0 25px
   .column
     margin: 1% 0 1% 0%
     width: 100%
 
-@media only screen and (max-width: 1085px)
-  h2.about-me-header
-    font-size: 1.5em
+// @media only screen and (max-width: 1085px)
+//   h2.introduction__header
+//     font-size: 1.5em
 
 
 @media only screen and (max-width: 980px)
-  .main-project
-    display: table
-  .project-text-container
-    display: block
-    width: auto
-    max-width: 25em
-    margin: 0 auto
-  .main-project-image-container
-    display: table-header-group
-    margin: 0 auto
-  .main-project-button
-    margin: 1em auto
-  .about-text-container
-    display: block
+  .introduction__container
     width: auto
   .flex-row
     display: block
@@ -152,51 +142,29 @@ body
     width: 20em !important
     display: inline-block
     padding: 1em
-  .about-me-header
-    text-align: center
-  .about-me-pic-container
+  .introduction-pic-container
     display: block
     width: 22em
     margin: 0 auto
 
 @media only screen and (max-width: 870px)
-  .about-me
+  .introduction
     display: block
     padding-bottom: 1em
-  .about-me-pic
+  .introduction-pic
     float: none
     // display: block
     // margin: 0 auto
-  .about-text-container
-    // width: 75%
+  .introduction__container
     padding: 1em 0.5em 0.5em
     margin: 0 auto
 
 @media only screen and (max-width: 768px)
-  .about-text-container
+  .introduction__container
     width: 90%
     margin: 0 auto
-  .about-me
-    padding-top: 4em
-  .main-project-image-container
-    width: auto
-  .project-text-container
-    width: 100%
-  .main-portfolio-image
-    height: 25em
-  .project-title
-    margin-bottom: 0
-  .main-project-paragraph, .project-title
-    margin-top: 0.5em
-  .main-project
-    margin: 2em auto 0.5em
-  .project-text-wrapper
-    position: relative
-    padding: 0
-    transform: translateY(0)
-  .project-paragraph
-    color: $lightFontColor
-    margin: 0.5em 0 0
+  .introduction
+    padding-top: 100px
   .column-3
     padding: 1em 1em 0 0
     display: block
@@ -205,14 +173,14 @@ body
     padding-left: 0
     padding-right: 0
 
-@media only screen and (max-width: 632px)
-  h1.about-me-header
-    font-size: 2em
-  h2.about-me-header
-    font-size: 1.5em
+// @media only screen and (max-width: 632px)
+//   h1.introduction__header
+//     font-size: 2em
+//   h2.introduction__header
+//     font-size: 1.5em
 
 @media only screen and (max-width: 400px)
-  .about-me-pic
+  .introduction-pic
     width: 100%
-  .about-me-pic-container
+  .introduction-pic-container
     width: 100%

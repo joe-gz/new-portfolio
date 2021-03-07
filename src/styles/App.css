@@ -9,29 +9,28 @@ nav {
   color: #63a313; }
 
 .headerNav {
+  background-color: #1a242f;
   position: fixed;
   width: 100%;
   top: 0;
-  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.15);
-  height: 3.3em;
-  list-style-type: none;
-  margin: 0 auto;
-  padding: 0;
-  background-color: rgba(0, 0, 0, 0.8);
-  padding-left: 10%;
-  padding-right: 10%; }
+  height: 100px;
+  padding-left: 50px;
+  padding-right: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1); }
+
+.headerNav__scrolled {
+  transform: translateY(calc(100px * -1)); }
 
 .links {
   display: inline-block;
   margin: 0 1.25em; }
 
 .header-name {
-  height: 100%;
   color: #E5E5E5;
-  padding-left: .2em;
-  padding-top: .2em;
-  font-size: 2em;
-  float: left; }
+  font-size: 2em; }
 
 .nav-links {
   float: right;
@@ -58,101 +57,15 @@ nav {
     float: none; }
   .headerNav {
     padding-left: 0;
-    padding-right: 0; } }
-
-.top {
-  padding-top: 4%;
-  text-align: center;
-  color: #E5E5E5;
-  overflow: auto;
-  height: 40em; }
-
-.top p {
-  line-height: 150%;
-  text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15); }
-
-.top p, .experience p {
-  font-family: "Varela Round", sans-serif, sans-serif;
-  margin: 0 auto;
-  font-weight: normal;
-  width: 75%;
-  padding-top: 2%;
-  font-size: 1.5em; }
-
-.top h1 {
-  margin-top: 2em;
-  font-size: 4em; }
-
-.about-me {
-  color: #3A383B;
-  background-color: rgba(229, 229, 229, 0.95);
-  padding-top: 5em;
-  padding-bottom: 2em;
-  display: flex;
-  align-items: center; }
-
-.about-me-header {
-  text-align: left; }
-
-h2.about-me-header {
-  color: #63a313;
-  margin: 0.075em 0 0.75em;
-  font-size: 2em; }
-
-.about-me p, .experience p {
-  margin-top: 0;
-  font-weight: normal;
-  width: 75%;
-  text-align: left;
-  font-family: "Varela Round", sans-serif, sans-serif; }
-
-.about-me p {
-  text-align: justify;
-  width: 100%;
-  font-size: 1.2em; }
-
-.about-me-pic {
-  width: 22em;
-  height: auto;
-  vertical-align: middle; }
-
-.about-me-pic-container {
-  position: relative; }
-
-.about-me-pic-container::after {
-  content: '';
-  height: 100%;
-  width: 100%;
-  position: absolute;
-  box-shadow: 0 0 0 1em rgba(255, 255, 255, 0.5) inset;
-  left: 0; }
-
-.about-text-container {
-  display: inline-block;
-  width: calc(100% - 25em);
-  padding: 0 1em 1em 1em; }
-
-.experience {
-  padding-top: 2%;
-  padding-bottom: 5%;
-  text-align: center;
-  color: #3A383B;
-  background: white;
-  opacity: 0.9; }
-
-.experience h2 {
-  font-family: "Varela Round", sans-serif, serif; }
+    padding-right: 0;
+    width: calc(100% - 50px); } }
 
 .skills {
   margin: 0;
   padding-top: 2%; }
 
 .skills, .prior-head {
-  font-size: 2.25em; }
-
-.experience p {
-  font-size: 1em;
-  text-align: center; }
+  font-size: 2em; }
 
 .skills-paragraph {
   line-height: 1.3em;
@@ -167,11 +80,66 @@ h2.about-me-header {
   margin: 0;
   padding: 0; }
 
+.introduction {
+  color: #E5E5E5;
+  padding-top: 100px;
+  padding-bottom: 2em;
+  display: flex;
+  align-items: center; }
+
+.introduction__header {
+  text-align: left;
+  font-size: clamp(40px, 7vw, 80px); }
+
+.introduction__intro {
+  font-size: 1.1em;
+  text-align: left; }
+
+.introduction__special {
+  color: #63a313;
+  font-size: clamp(40px, 7vw, 70px); }
+
+.introduction p, .experience p {
+  font-weight: normal;
+  text-align: left;
+  font-family: "Varela Round", sans-serif, sans-serif; }
+
+.introduction__text {
+  text-align: left;
+  max-width: 30em;
+  font-size: 1.1em;
+  margin: 20px 0 0; }
+
+.introduction-pic {
+  width: 22em;
+  height: auto;
+  vertical-align: middle; }
+
+.introduction-pic-container {
+  position: relative; }
+
+.introduction-pic-container::after {
+  content: '';
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  box-shadow: 0 0 0 1em rgba(255, 255, 255, 0.5) inset;
+  left: 0; }
+
+.introduction__container {
+  width: 100%;
+  padding: 1em 1em 0 1em;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; }
+
+.introduction__button {
+  margin: 2em 0 0; }
+
 .portfolio {
   padding-top: 5%;
   padding-bottom: 5%;
   text-align: center;
-  background: rgba(0, 0, 0, 0.85);
   color: #E5E5E5; }
 
 .portfolio-paragraph {
@@ -181,10 +149,6 @@ h2.about-me-header {
   font-size: 1.5em; }
 
 .main-project {
-  position: relative;
-  overflow: hidden;
-  width: 75%;
-  max-width: 1200px;
   margin: 2em auto;
   display: flex;
   align-items: center; }
@@ -247,6 +211,20 @@ h2.about-me-header {
   margin-top: 1.5em;
   margin-bottom: 1.5em; }
 
+.project-header {
+  font-size: 2em;
+  text-align: left;
+  display: flex;
+  align-items: center; }
+  .project-header::after {
+    content: "";
+    display: block;
+    position: relative;
+    width: 300px;
+    height: 1px;
+    margin-left: 20px;
+    background-color: #E5E5E5; }
+
 .project-text-wrapper {
   position: absolute;
   top: 0;
@@ -267,14 +245,13 @@ h2.about-me-header {
   width: 48%; }
 
 .project-text-container {
-  display: inline-block;
-  width: 48%; }
+  width: 48%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; }
 
 .main-project-button {
-  border-radius: 1em; }
-
-.main-project-button {
-  display: block;
+  border-radius: .15em;
   font-family: "Varela Round", sans-serif;
   font-size: 1.15em;
   border: none;
@@ -284,17 +261,50 @@ h2.about-me-header {
   margin: 1em 0;
   text-decoration: none;
   transition: all ease 0.33s;
-  width: 80%; }
+  cursor: pointer;
+  background: transparent; }
   .main-project-button:hover {
-    background: #395e0b;
-    border: 2px solid #395e0b;
-    width: 85%; }
+    background: rgba(99, 163, 19, 0.2); }
 
 .feature-project-container {
   color: #E5E5E5; }
 
 .portfolio-full-container {
   position: relative; }
+
+@media only screen and (max-width: 980px) {
+  .main-project {
+    display: table; }
+  .project-text-container {
+    width: auto;
+    max-width: 25em;
+    margin: 0 auto; }
+  .main-project-image-container {
+    display: table-header-group;
+    margin: 0 auto; }
+  .project-header::after {
+    width: 200px; } }
+
+@media only screen and (max-width: 768px) {
+  .main-project-image-container {
+    width: auto; }
+  .project-text-container {
+    width: 100%; }
+  .main-portfolio-image {
+    height: 25em; }
+  .project-title {
+    margin-bottom: 0; }
+  .main-project-paragraph, .project-title {
+    margin-top: 0.5em; }
+  .main-project {
+    margin: 2em auto 0.5em; }
+  .project-text-wrapper {
+    position: relative;
+    padding: 0;
+    transform: translateY(0); }
+  .project-paragraph {
+    color: #E5E5E5;
+    margin: 0.5em 0 0; } }
 
 @media only screen and (min-width: 500px) {
   .project-card::before {
@@ -310,6 +320,27 @@ h2.about-me-header {
     background: rgba(255, 255, 255, 0.85); }
   .project-card:hover .project-text-wrapper {
     transform: translateY(0); } }
+
+.experience p {
+  font-family: "Varela Round", sans-serif, sans-serif;
+  margin: 0 auto;
+  font-weight: normal;
+  width: 75%;
+  padding-top: 2%;
+  font-size: 1.5em;
+  font-size: 1em;
+  text-align: center; }
+
+.experience {
+  padding-top: 2%;
+  padding-bottom: 5%;
+  text-align: center;
+  color: #3A383B;
+  background: white;
+  opacity: 0.9; }
+
+.experience h2 {
+  font-family: "Varela Round", sans-serif, serif; }
 
 .contact {
   color: #E5E5E5;
@@ -371,8 +402,12 @@ h2.about-me-header {
   background-size: contain;
   color: white; }
 
+.footer__header {
+  font-size: 2em; }
+
 .App {
-  text-align: center; }
+  text-align: center;
+  background: #1a242f; }
 
 .App-logo {
   animation: App-logo-spin infinite 20s linear;
@@ -394,7 +429,6 @@ h1 {
   margin: 0;
   font-weight: 300;
   font-family: "Varela Round", sans-serif, serif;
-  font-size: 2.5em;
   text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15); }
 
 body {
@@ -405,15 +439,14 @@ body {
   background-size: cover;
   font-family: "Varela Round", sans-serif; }
 
+a {
+  text-decoration: none; }
+
 .section-container {
   padding-left: 5em;
-  padding-right: 5em; }
-
-.anchor {
-  display: block;
-  height: 2.8em;
-  margin-top: -2.8em;
-  visibility: hidden; }
+  padding-right: 5em;
+  padding-top: 100px;
+  padding-bottom: 100px; }
 
 .flex-row {
   display: flex;
@@ -464,29 +497,14 @@ body {
   list-style-type: none; }
 
 @media only screen and (max-width: 480px) {
+  .App {
+    padding: 0 25px; }
   .column {
     margin: 1% 0 1% 0%;
     width: 100%; } }
 
-@media only screen and (max-width: 1085px) {
-  h2.about-me-header {
-    font-size: 1.5em; } }
-
 @media only screen and (max-width: 980px) {
-  .main-project {
-    display: table; }
-  .project-text-container {
-    display: block;
-    width: auto;
-    max-width: 25em;
-    margin: 0 auto; }
-  .main-project-image-container {
-    display: table-header-group;
-    margin: 0 auto; }
-  .main-project-button {
-    margin: 1em auto; }
-  .about-text-container {
-    display: block;
+  .introduction__container {
     width: auto; }
   .flex-row {
     display: block; }
@@ -494,48 +512,27 @@ body {
     width: 20em !important;
     display: inline-block;
     padding: 1em; }
-  .about-me-header {
-    text-align: center; }
-  .about-me-pic-container {
+  .introduction-pic-container {
     display: block;
     width: 22em;
     margin: 0 auto; } }
 
 @media only screen and (max-width: 870px) {
-  .about-me {
+  .introduction {
     display: block;
     padding-bottom: 1em; }
-  .about-me-pic {
+  .introduction-pic {
     float: none; }
-  .about-text-container {
+  .introduction__container {
     padding: 1em 0.5em 0.5em;
     margin: 0 auto; } }
 
 @media only screen and (max-width: 768px) {
-  .about-text-container {
+  .introduction__container {
     width: 90%;
     margin: 0 auto; }
-  .about-me {
-    padding-top: 4em; }
-  .main-project-image-container {
-    width: auto; }
-  .project-text-container {
-    width: 100%; }
-  .main-portfolio-image {
-    height: 25em; }
-  .project-title {
-    margin-bottom: 0; }
-  .main-project-paragraph, .project-title {
-    margin-top: 0.5em; }
-  .main-project {
-    margin: 2em auto 0.5em; }
-  .project-text-wrapper {
-    position: relative;
-    padding: 0;
-    transform: translateY(0); }
-  .project-paragraph {
-    color: #E5E5E5;
-    margin: 0.5em 0 0; }
+  .introduction {
+    padding-top: 100px; }
   .column-3 {
     padding: 1em 1em 0 0;
     display: block;
@@ -544,14 +541,8 @@ body {
     padding-left: 0;
     padding-right: 0; } }
 
-@media only screen and (max-width: 632px) {
-  h1.about-me-header {
-    font-size: 2em; }
-  h2.about-me-header {
-    font-size: 1.5em; } }
-
 @media only screen and (max-width: 400px) {
-  .about-me-pic {
+  .introduction-pic {
     width: 100%; }
-  .about-me-pic-container {
+  .introduction-pic-container {
     width: 100%; } }

@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
-import SecondaryProject from './OtherProjects';
+import SecondaryProject from './SecondaryProject';
+import Button from '../Button.js';
 import {spotlight, projectArray} from '../../config';
 
 class Portfolio extends Component {
@@ -37,27 +38,25 @@ class Portfolio extends Component {
   render() {
     const secondaryProjectArray = this.createSecondaryProject();
     return (
-      <div className='portfolio-full-container'>
-        <span className='anchor' id='portfolioAnchor'></span>
-        <div className='portfolio section-container'>
-          <div className='max-width'>
-            <h1 className='project-header'>See My Work</h1>
-            <div className='main-project'>
-              <div className='project-text-container'>
-                <h2 className = 'project-title'><span className='feature-project-container'>Feature Project - </span>{spotlight.title}</h2>
-                <p className = 'main-project-paragraph'>{spotlight.description}</p>
-                <a className='main-project-button' href={spotlight.link}>
-                  Check it out
-                </a>
-              </div>
-              <div className='main-project-image-container'>
-                <img className='main-portfolio-image' src={spotlight.image} alt='spotlight' />
-              </div>
+      <div className='portfolio section-container'>
+        <div className='max-width'>
+          <h1 className='project-header' id='portfolioAnchor'>See My Work</h1>
+          <div className='main-project'>
+            <div className='project-text-container'>
+              <h2 className = 'project-title'><span className='feature-project-container'>Feature Project - </span>{spotlight.title}</h2>
+              <p className = 'main-project-paragraph'>{spotlight.description}</p>
+              <Button
+                link={spotlight.link}
+                text={'Check it out'}
+              />
             </div>
-            <h2 className='other-header'>Some other cool projects</h2>
-            <div className = 'flex-row second-projects'>
-              {secondaryProjectArray}
+            <div className='main-project-image-container'>
+              <img className='main-portfolio-image' src={spotlight.image} alt='spotlight' />
             </div>
+          </div>
+          <h2 className='other-header'>Some other cool projects</h2>
+          <div className = 'flex-row second-projects'>
+            {secondaryProjectArray}
           </div>
         </div>
       </div>

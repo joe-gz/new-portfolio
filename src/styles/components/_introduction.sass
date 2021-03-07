@@ -1,0 +1,61 @@
+.introduction
+  @include backgroundToFont($darkFontColor)
+  padding-top: 100px
+  padding-bottom: 2em
+  display: flex
+  align-items: center
+
+.introduction__header
+  text-align: left
+  font-size: clamp(40px, 7vw, 80px)
+
+.introduction__intro
+  font-size: 1.1em
+  text-align: left
+
+.introduction__special
+  color: $colorPrimary
+  font-size: clamp(40px, 7vw, 70px)
+
+.introduction p, .experience p
+  font-weight: normal
+  text-align: left
+  font-family: $textFont, sans-serif
+
+.introduction__text
+  text-align: left
+  max-width: 30em
+  font-size: 1.1em
+  margin: 20px 0 0
+
+.introduction-pic
+  width: 22em
+  height: auto
+  vertical-align: middle
+  // float: left
+  // // border-radius: 10px
+  // margin-left: 1em
+  // margin-right: 1em
+  // padding: .2em
+  // // box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.25)
+
+.introduction-pic-container
+  position: relative
+
+.introduction-pic-container::after
+  content: ''
+  height: 100%
+  width: 100%
+  position: absolute
+  box-shadow: 0 0 0 1em rgba(white, 0.5) inset
+  left: 0
+
+.introduction__container
+  width: 100%
+  padding: 1em 1em 0 1em
+  display: flex
+  flex-direction: column
+  align-items: flex-start
+
+.introduction__button
+  margin: 2em 0 0
