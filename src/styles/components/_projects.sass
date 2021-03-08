@@ -16,16 +16,16 @@
   align-items: center
 
 .second-projects
-  width: 95%
-  margin: 0 auto
+  display: flex
+  flex-direction: column
 
-.main-portfolio-image,.portfolio-image
+.main-portfolio-image
   // border-radius: 5%
   box-shadow: 2px 2px 2px 0px rgba(0,0,0,0.75)
 
 .portfolio-image
+  height: 100%
   width: 100%
-  height: 15em
 
 .main-portfolio-image
   height: auto
@@ -34,11 +34,16 @@
   max-height: 350px
 
 .project-card
-  // margin: 0.5em
-  position: relative
-  overflow: hidden
-  cursor: pointer
-
+  display: grid
+  gap: 10px
+  grid-template-columns: repeat(12, 1fr)
+  align-items: center
+  &:not(:last-of-type)
+    margin-bottom: 100px
+  &:nth-of-type(odd)
+    .project-text-wrapper
+      grid-area: 1 / 1 / -1 / 7
+      grid-column: 1 / 9
 .project-card a
   text-decoration: none
 
@@ -49,9 +54,9 @@
   text-align: left
 
 .project-paragraph
-  vertical-align: middle
   font-family: $textFont, sans-serif
-  color: $darkFontColor
+  color: $lightFontColor
+  text-align: right
 
 .project-title
   font-family: $headerFont, serif
@@ -64,10 +69,8 @@
 
 .project-title-other
   font-family: $headerFont, serif
-  // font-size: 2em
-  vertical-align: middle
   color: $colorPrimary
-  text-align: center
+  text-align: right
   font-size: 1.5em
   margin-bottom: 0
 
@@ -76,6 +79,7 @@
   padding-top: 1.5em
   margin-top: 1.5em
   margin-bottom: 1.5em
+  text-align: left
 
 .project-header
   font-size: 2em
@@ -92,20 +96,18 @@
     background-color: $lightFontColor
 
 .project-text-wrapper
-  position: absolute
-  // width: 75%
-  top: 0
-  right: 0
-  bottom: 0
-  left: 0
-  margin: 0 auto
-  padding: 5%
+  height: 100%
   color: $darkFontColor
-  transform: translateY(-100%)
-  transition: transform .35s ease-out
+  grid-area: 1 / 1 / -1 / 7
+  grid-column: 8 / -1
+  display: flex
+  flex-direction: column
+  justify-content: center
 
-.main-project:hover .project-text-wrapper
-  transform: translateY(0)
+.project-image__wrapper
+  grid-area: 1 / 6 / -1 / -1
+  grid-column: 1 / 8
+  cursor: pointer
 
 .main-project-image-container
   display: inline-block
@@ -166,26 +168,22 @@
       margin-top: 0.5em
     .main-project
       margin: 2em auto 0.5em
-    .project-text-wrapper
-      position: relative
-      padding: 0
-      transform: translateY(0)
     .project-paragraph
       color: $lightFontColor
       margin: 0.5em 0 0
 
-@media only screen and (min-width: 500px)
-  .project-card::before
-    content: ' '
-    position: absolute
-    top: 0
-    right: 0
-    bottom: 0
-    left: 0
-    // border-radius: 5%
-    background: transparent
-    transition: background .35s ease-out
-  .project-card:hover::before
-    background: rgba(255, 255, 255, .85)
-  .project-card:hover .project-text-wrapper
-    transform: translateY(0)
+// @media only screen and (min-width: 500px)
+//   .project-card::before
+//     content: ' '
+//     position: absolute
+//     top: 0
+//     right: 0
+//     bottom: 0
+//     left: 0
+//     // border-radius: 5%
+//     background: transparent
+//     transition: background .35s ease-out
+//   .project-card:hover::before
+//     background: rgba(255, 255, 255, .85)
+//   .project-card:hover .project-text-wrapper
+//     transform: translateY(0)

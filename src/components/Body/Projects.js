@@ -16,8 +16,15 @@ class Portfolio extends Component {
     const secondaryProjectArray = [];
     projectArray.forEach((project, i) => {
       secondaryProjectArray.push(
-        <SecondaryProject key={project.title} link={project.link} image={project.image} title={project.title} description={project.description} openModal={this.openModal} />
-      )
+        <SecondaryProject
+          key={project.title}
+          link={project.link}
+          image={project.image}
+          title={project.title}
+          description={project.description}
+          openModal={this.openModal}
+        />
+      );
     });
 
     return secondaryProjectArray;
@@ -55,7 +62,7 @@ class Portfolio extends Component {
             </div>
           </div>
           <h2 className='other-header'>Some other cool projects</h2>
-          <div className = 'flex-row second-projects'>
+          <div className = 'second-projects'>
             {secondaryProjectArray}
           </div>
         </div>

@@ -2,14 +2,18 @@ import React, { Component } from 'react';
 
 function SecondaryProject(props) {
   return (
-    <div className = 'column-3 project-card'>
-      <a href={props.link} target='_blank' rel='noopener noreferrer'>
-      <img className='portfolio-image' src={props.image} alt='secondary' />
-        <div className='project-text-wrapper'>
+    <div className = 'project-card'>
+      <div className='project-text-wrapper'>
+        <a href={props.link} target='_blank' rel='noopener noreferrer'>
           <h2 className = 'project-title-other'>{props.title}</h2>
-          <p className = 'project-paragraph'>{props.description}</p>
-        </div>
-      </a>
+        </a>
+        <p className = 'project-paragraph'>{props.description}</p>
+      </div>
+      <div className='project-image__wrapper'>
+        <a href={props.link} target='_blank' rel='noopener noreferrer'>
+          <img className='portfolio-image' src={props.image} alt='secondary' />
+        </a>
+      </div>
     </div>
   );
 };
