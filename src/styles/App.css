@@ -184,6 +184,14 @@ nav {
     text-align: left; }
   .project-card:nth-of-type(even) .project-image__wrapper {
     grid-area: 1 / 6 / -1 / -1; }
+  .project-card:nth-of-type(even) .built-with__list {
+    justify-content: flex-start; }
+    .project-card:nth-of-type(even) .built-with__list li {
+      margin: 0px 20px 5px 0; }
+  .project-card:nth-of-type(odd) .built-with__list {
+    justify-content: flex-end; }
+    .project-card:nth-of-type(odd) .built-with__list li {
+      margin: 0px 0px 5px 20px; }
 
 .project-card a {
   text-decoration: none; }
@@ -204,7 +212,7 @@ nav {
   vertical-align: middle;
   color: #63a313;
   text-align: left;
-  font-size: 2em;
+  font-size: 1.75em;
   margin-bottom: 0; }
 
 .project-title-other {
@@ -329,6 +337,15 @@ nav {
 
 .experience h2 {
   font-family: "Varela Round", sans-serif, serif; }
+
+.built-with__list {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  width: 100%;
+  color: #63a313; }
+  .built-with__list li {
+    margin: 0px 20px 5px 0; }
 
 .contact {
   color: #E5E5E5;

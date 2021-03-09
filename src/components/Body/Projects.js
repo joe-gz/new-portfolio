@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import SecondaryProject from './SecondaryProject';
 import Button from '../Button.js';
+import BuiltWith from '../BuiltWith.js';
 import {spotlight, projectArray} from '../../config';
 
 class Portfolio extends Component {
@@ -18,6 +19,7 @@ class Portfolio extends Component {
       secondaryProjectArray.push(
         <SecondaryProject
           key={project.title}
+          builtWith={project.builtWith}
           link={project.link}
           image={project.image}
           title={project.title}
@@ -52,6 +54,7 @@ class Portfolio extends Component {
             <div className='project-text-container'>
               <h2 className = 'project-title'><span className='feature-project-container'>Feature Project - </span>{spotlight.title}</h2>
               <p className = 'main-project-paragraph'>{spotlight.description}</p>
+              <BuiltWith builtWith={spotlight.builtWith} />
               <Button
                 link={spotlight.link}
                 text={'Check it out'}

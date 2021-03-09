@@ -1,4 +1,5 @@
-import React, { Component } from 'react';
+import React from 'react';
+import BuiltWith from '../BuiltWith.js';
 
 function SecondaryProject(props) {
   return (
@@ -8,6 +9,7 @@ function SecondaryProject(props) {
           <h2 className = 'project-title-other'>{props.title}</h2>
         </a>
         <p className = 'project-paragraph'>{props.description}</p>
+        <BuiltWith builtWith={props.builtWith} />
       </div>
       <div className='project-image__wrapper'>
         <a href={props.link} target='_blank' rel='noopener noreferrer'>

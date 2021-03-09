@@ -48,6 +48,15 @@
       text-align: left
     .project-image__wrapper
       grid-area: 1 / 6 / -1 / -1
+    .built-with__list
+      justify-content: flex-start
+      li
+        margin: 0px 20px 5px 0
+  &:nth-of-type(odd)
+    .built-with__list
+      justify-content: flex-end
+      li
+        margin: 0px 0px 5px 20px
 
 .project-card a
   text-decoration: none
@@ -69,7 +78,7 @@
   vertical-align: middle
   color: $colorPrimary
   text-align: left
-  font-size: 2em
+  font-size: 1.75em
   margin-bottom: 0
 
 .project-title-other
