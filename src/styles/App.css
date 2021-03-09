@@ -177,9 +177,13 @@ nav {
   align-items: center; }
   .project-card:not(:last-of-type) {
     margin-bottom: 100px; }
-  .project-card:nth-of-type(odd) .project-text-wrapper {
+  .project-card:nth-of-type(even) .project-text-wrapper {
     grid-area: 1 / 1 / -1 / 7;
-    grid-column: 1 / 9; }
+    grid-column: 1 / 6; }
+  .project-card:nth-of-type(even) .project-title-other, .project-card:nth-of-type(even) .project-paragraph {
+    text-align: left; }
+  .project-card:nth-of-type(even) .project-image__wrapper {
+    grid-area: 1 / 6 / -1 / -1; }
 
 .project-card a {
   text-decoration: none; }
@@ -278,8 +282,6 @@ nav {
   position: relative; }
 
 @media only screen and (max-width: 980px) {
-  .main-project {
-    display: table; }
   .project-text-container {
     width: auto;
     max-width: 25em;
