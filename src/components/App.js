@@ -4,7 +4,8 @@ import Header from './Header/Header';
 import Footer from './Footer/Footer';
 import Introduction from './Body/Introduction'
 import Experience from './Body/Experience';
-import Portfolio from './Body/Projects';
+import Projects from './Body/Projects';
+import About from './Body/About';
 
 class App extends Component {
 
@@ -13,8 +14,8 @@ class App extends Component {
       <div className="App">
         <Header />
         <Introduction />
-        <Portfolio />
-        <Experience />
+        <Projects />
+        <About />
         <Footer />
       </div>
     );

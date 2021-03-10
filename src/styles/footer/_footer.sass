@@ -6,7 +6,7 @@
 
 @mixin backgroundToFont($background)
   color: contrastingColor($background)
-  background-color: fade-out($background, 0.05)
+  background-color: $background
 
 .contact
   @include backgroundToFont(#495159)
@@ -14,8 +14,7 @@
   text-align: center
   bottom: 0
   font-family: $textFont, sans-serif
-  opacity: 0.9
-  padding-bottom: 2.5%
+  padding: 50px !important
 
 .contact h1
   list-style-type: none

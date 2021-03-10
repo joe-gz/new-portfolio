@@ -110,22 +110,6 @@ nav {
   font-size: 1.1em;
   margin: 20px 0 0; }
 
-.introduction-pic {
-  width: 22em;
-  height: auto;
-  vertical-align: middle; }
-
-.introduction-pic-container {
-  position: relative; }
-
-.introduction-pic-container::after {
-  content: '';
-  height: 100%;
-  width: 100%;
-  position: absolute;
-  box-shadow: 0 0 0 1em rgba(255, 255, 255, 0.5) inset;
-  left: 0; }
-
 .introduction__container {
   width: 100%;
   padding: 1em 1em 0 1em;
@@ -150,8 +134,9 @@ nav {
 
 .main-project {
   margin: 2em auto;
-  display: flex;
-  align-items: center; }
+  align-items: center;
+  display: grid;
+  grid-template-columns: 2fr 2fr; }
 
 .second-projects {
   display: flex;
@@ -229,12 +214,12 @@ nav {
   margin-bottom: 1.5em;
   text-align: left; }
 
-.project-header {
+.project__header, .about__header {
   font-size: 2em;
   text-align: left;
   display: flex;
   align-items: center; }
-  .project-header::after {
+  .project__header::after, .about__header::after {
     content: "";
     display: block;
     position: relative;
@@ -257,12 +242,7 @@ nav {
   grid-column: 1 / 8;
   cursor: pointer; }
 
-.main-project-image-container {
-  display: inline-block;
-  width: 48%; }
-
 .project-text-container {
-  width: 48%;
   display: flex;
   flex-direction: column;
   align-items: flex-start; }
@@ -275,7 +255,7 @@ nav {
   border: 2px solid #63a313;
   color: #E5E5E5;
   padding: 0.67em;
-  margin: 1em 0;
+  margin: 3em 0;
   text-decoration: none;
   transition: all ease 0.33s;
   cursor: pointer;
@@ -297,7 +277,7 @@ nav {
   .main-project-image-container {
     display: table-header-group;
     margin: 0 auto; }
-  .project-header::after {
+  .project__header::after {
     width: 200px; } }
 
 @media only screen and (max-width: 768px) {
@@ -338,6 +318,55 @@ nav {
 .experience h2 {
   font-family: "Varela Round", sans-serif, serif; }
 
+.about__wrapper {
+  color: #E5E5E5;
+  padding-top: 100px;
+  padding-bottom: 2em;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column; }
+
+.about {
+  margin: 2em auto;
+  display: grid;
+  grid-template-columns: 2fr 2fr;
+  max-width: 64em;
+  align-items: flex-start;
+  gap: 50px; }
+
+.about-text__container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  justify-content: center; }
+
+.about__list {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(140px, 200px));
+  padding: 0px;
+  margin: 20px 0px 0px;
+  overflow: hidden;
+  list-style: none; }
+
+.profile-picture {
+  width: 22em;
+  height: auto;
+  vertical-align: middle; }
+
+.profile-picture__container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  margin-top: 1em; }
+
+.profile-picture__container::before {
+  content: '';
+  height: 100%;
+  width: 22em;
+  position: absolute;
+  box-shadow: 0 0 0 1em rgba(255, 255, 255, 0.5) inset; }
+
 .built-with__list {
   display: flex;
   list-style: none;
@@ -349,13 +378,12 @@ nav {
 
 .contact {
   color: #E5E5E5;
-  background-color: rgba(73, 81, 89, 0.95);
+  background-color: #495159;
   margin: 0;
   text-align: center;
   bottom: 0;
   font-family: "Varela Round", sans-serif, sans-serif;
-  opacity: 0.9;
-  padding-bottom: 2.5%; }
+  padding: 50px !important; }
 
 .contact h1 {
   list-style-type: none;
@@ -481,16 +509,16 @@ a {
     width: 20em !important;
     display: inline-block;
     padding: 1em; }
-  .introduction-pic-container {
+  .profile-picture__container {
     display: block;
     width: 22em;
     margin: 0 auto; } }
 
 @media only screen and (max-width: 870px) {
-  .introduction {
+  .introduction, .about__wrapper {
     display: block;
     padding-bottom: 1em; }
-  .introduction-pic {
+  .profile-picture {
     float: none; }
   .introduction__container {
     padding: 1em 0.5em 0.5em;
@@ -500,7 +528,7 @@ a {
   .introduction__container {
     width: 90%;
     margin: 0 auto; }
-  .introduction {
+  .introduction, .about__wrapper {
     padding-top: 100px; }
   .column-3 {
     padding: 1em 1em 0 0;
@@ -511,7 +539,7 @@ a {
     padding-right: 0; } }
 
 @media only screen and (max-width: 400px) {
-  .introduction-pic {
+  .profile-picture {
     width: 100%; }
-  .introduction-pic-container {
+  .profile-picture__container {
     width: 100%; } }

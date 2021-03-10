@@ -4,7 +4,7 @@ import Button from '../Button.js';
 import BuiltWith from '../BuiltWith.js';
 import {spotlight, projectArray} from '../../config';
 
-class Portfolio extends Component {
+class Projects extends Component {
 
   constructor(props) {
     super(props);
@@ -49,7 +49,7 @@ class Portfolio extends Component {
     return (
       <div className='portfolio section-container'>
         <div className='max-width'>
-          <h1 className='project-header' id='portfolioAnchor'>See My Work</h1>
+          <h1 className='project__header' id='projectsAnchor'>See My Work</h1>
           <div className='main-project'>
             <div className='project-text-container'>
               <h2 className = 'project-title'><span className='feature-project-container'>Feature Project - </span>{spotlight.title}</h2>
@@ -74,4 +74,4 @@ class Portfolio extends Component {
   }
 }
 
-export default Portfolio;
+export default Projects;
