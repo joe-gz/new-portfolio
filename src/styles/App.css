@@ -374,7 +374,12 @@ nav {
 @media only screen and (max-width: 675px) {
   .about {
     display: flex;
-    flex-direction: column-reverse; } }
+    flex-direction: column-reverse;
+    gap: 0; } }
+
+@media only screen and (max-width: 400px) {
+  .profile-picture__container::before {
+    width: 16em; } }
 
 .built-with__list {
   display: flex;
@@ -544,10 +549,12 @@ a {
 @media only screen and (max-width: 675px) {
   .section-container {
     padding-left: 1.5em;
-    padding-right: 1.5em; } }
+    padding-right: 1.5em; }
+  .about__wrapper {
+    display: block; } }
 
 @media only screen and (max-width: 400px) {
   .profile-picture {
-    width: 100%; }
+    width: 16em; }
   .profile-picture__container {
     width: 100%; } }
