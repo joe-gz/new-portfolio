@@ -18,9 +18,6 @@ class Footer extends Component {
             <a target="_blank" rel="noopener noreferrer" href='https://www.linkedin.com/in/joe-glatman-zaretsky-a2900110/' title='linkedIn'>
               <div className='contact-link linkedin-icon'></div>
             </a>
-            <a target="_blank" rel="noopener noreferrer" href='https://www.facebook.com/joe.zaretsky' title='facebook'>
-              <div className='contact-link facebook-icon'></div>
-            </a>
             <a target="_blank" rel="noopener noreferrer" href='https://twitter.com/therealJGZ' title='twitter'>
               <div className='contact-link twitter-icon'></div>
             </a>

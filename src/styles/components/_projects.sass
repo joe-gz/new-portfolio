@@ -160,8 +160,6 @@
   .main-project-image-container
     display: table-header-group
     margin: 0 auto
-  .project__header::after
-    width: 200px
 
 @media only screen and (max-width: 768px)
     .main-project-image-container
@@ -180,18 +178,12 @@
       color: $lightFontColor
       margin: 0.5em 0 0
 
-// @media only screen and (min-width: 500px)
-//   .project-card::before
-//     content: ' '
-//     position: absolute
-//     top: 0
-//     right: 0
-//     bottom: 0
-//     left: 0
-//     // border-radius: 5%
-//     background: transparent
-//     transition: background .35s ease-out
-//   .project-card:hover::before
-//     background: rgba(255, 255, 255, .85)
-//   .project-card:hover .project-text-wrapper
-//     transform: translateY(0)
+@media only screen and (max-width: 600px)
+  .main-project
+    display: flex
+    flex-direction: column-reverse
+  .project__header::after
+    width: 200px
+  .project-card
+    display: flex
+    flex-direction: column-reverse

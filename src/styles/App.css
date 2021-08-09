@@ -48,17 +48,13 @@ nav {
 
 @media only screen and (max-width: 675px) {
   .nav-links {
-    display: none; } }
-
-@media only screen and (max-width: 500px) {
+    display: none; }
+  .headerNav {
+    position: absolute;
+    width: 100%; }
   .header-name {
     padding: 0;
-    margin: 0 auto;
-    float: none; }
-  .headerNav {
-    padding-left: 0;
-    padding-right: 0;
-    width: calc(100% - 50px); } }
+    margin: 0 auto; } }
 
 .skills {
   margin: 0;
@@ -276,9 +272,7 @@ nav {
     margin: 0 auto; }
   .main-project-image-container {
     display: table-header-group;
-    margin: 0 auto; }
-  .project__header::after {
-    width: 200px; } }
+    margin: 0 auto; } }
 
 @media only screen and (max-width: 768px) {
   .main-project-image-container {
@@ -296,6 +290,16 @@ nav {
   .project-paragraph {
     color: #E5E5E5;
     margin: 0.5em 0 0; } }
+
+@media only screen and (max-width: 600px) {
+  .main-project {
+    display: flex;
+    flex-direction: column-reverse; }
+  .project__header::after {
+    width: 200px; }
+  .project-card {
+    display: flex;
+    flex-direction: column-reverse; } }
 
 .experience p {
   font-family: "Varela Round", sans-serif, sans-serif;
@@ -366,6 +370,11 @@ nav {
   width: 22em;
   position: absolute;
   box-shadow: 0 0 0 1em rgba(255, 255, 255, 0.5) inset; }
+
+@media only screen and (max-width: 675px) {
+  .about {
+    display: flex;
+    flex-direction: column-reverse; } }
 
 .built-with__list {
   display: flex;
@@ -494,8 +503,6 @@ a {
   list-style-type: none; }
 
 @media only screen and (max-width: 480px) {
-  .App {
-    padding: 0 25px; }
   .column {
     margin: 1% 0 1% 0%;
     width: 100%; } }
@@ -516,7 +523,6 @@ a {
 
 @media only screen and (max-width: 870px) {
   .introduction, .about__wrapper {
-    display: block;
     padding-bottom: 1em; }
   .profile-picture {
     float: none; }
@@ -533,10 +539,12 @@ a {
   .column-3 {
     padding: 1em 1em 0 0;
     display: block;
-    margin: 0 auto; }
+    margin: 0 auto; } }
+
+@media only screen and (max-width: 675px) {
   .section-container {
-    padding-left: 0;
-    padding-right: 0; } }
+    padding-left: 1.5em;
+    padding-right: 1.5em; } }
 
 @media only screen and (max-width: 400px) {
   .profile-picture {
