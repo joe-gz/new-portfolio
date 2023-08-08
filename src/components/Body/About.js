@@ -9,7 +9,7 @@ function AboutMe(props) {
         <div className='about'>
           <div className='about-text__container'>
             <p>
-              Originally from Brooklyn, NY, I've been living in Washington, DC for 9+ years, with a stop in Minnesota in between those for college, and a couple years after.
+              Originally from Brooklyn, NY, I've been living in Washington, DC for 11+ years, with a stop in Minnesota in between those for college, and a couple years after.
               After a couple jobs as a data analyst, I found my passion in software engineering and made the full career switch.</p>
             <p>
               What started with coding "homework" assignments from my best friend, and 6 months at General Assembly as a student and instructor, I am now a Senior Software Engineer at CAVA.
