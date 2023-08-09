@@ -8,17 +8,17 @@
     "jquery": "^3.2.1",
     "jquery-smooth-scroll": "^2.2.0",
     "react": "^15.5.4",
-    "react-dom": "^15.5.4"
+    "react-dom": "^15.5.4",
+    "sass": "^1.64.2"
   },
   "devDependencies": {
     "gh-pages": "^1.2.0",
-    "node-sass-chokidar": "0.0.2",
     "npm-run-all": "^4.0.2",
     "react-scripts": "1.0.7"
   },
   "scripts": {
-    "build-css": "node-sass-chokidar --include-path ./src --include-path ./node_modules src/ -o src/",
-    "watch-css": "npm run build-css && node-sass-chokidar --include-path ./src --include-path ./node_modules src/ -o src/ --watch --recursive",
+    "build-css": "sass -I ./src -I ./node_modules src/:src/",
+    "watch-css": "npm run build-css && sass -I ./src -I ./node_modules src/:src/ --watch",
     "start-js": "react-scripts start",
     "start": "npm-run-all -p watch-css start-js",
     "build": "npm run build-css && react-scripts build",
